@@ -21,14 +21,15 @@ h1 {
 }
 h2#bio{
     color:black;
+    font-size:medium;
 }
 p{
     text-align: justify;
 }
 main{
     background-color: aliceblue;
-    border-radius: 40px;
-    width: 400px;
+    border-radius: 15px;
+    width: 650px;
     padding: 50px;
 }
 
