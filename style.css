@@ -4,7 +4,8 @@
 
 
 body{
-   background-image: linear-gradient(90deg, rgb(156, 242, 253), white);
+   /*background-image: linear-gradient(90deg, rgb(156, 242, 253), white);*/
+   background-image: linear-gradient(90deg, rgb(103, 178, 248), white);
    margin-top: 10px;
     margin-left: 60px;
     margin-right: 40px;
@@ -45,6 +46,7 @@ main{
     background-color: white;
     border-radius: 10px;
     width: 750px;
+    text-align: center;
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
 }
 
