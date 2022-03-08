@@ -9,9 +9,12 @@ body{
     margin-left: 60px;
     margin-right: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    
     background-attachment: fixed;
+   
     
 }
+
 h1 {
    
     text-align: center;
@@ -31,9 +34,22 @@ main{
     border-radius: 15px;
     width: 650px;
     padding: 50px;
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
 }
 .sub{
         font-family: Arial, Helvetica, sans-serif;
         color: rgb(3, 3, 110);
 }
 
+.destaque{
+    background-color: white;
+    border-radius: 10px;
+    width: 750px;
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+}
+
+.banner{
+    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);*/
+    border-radius: 15px;
+
+}
