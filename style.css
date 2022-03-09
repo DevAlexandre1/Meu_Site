@@ -62,4 +62,22 @@ div#menu_start{
     height: 50px;
     border-radius: 10px;
     background-color: rgb(170, 170, 170);
+   
 }
+
+nav#menu_nav > div{
+    display: inline-block;
+    color:rgb(3, 3, 110);
+    width: 40px;
+    height: 5px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+  
+}
+
+
+nav#menu_nav > p{
+    display: none;    
+}
+
