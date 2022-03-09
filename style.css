@@ -5,7 +5,8 @@
 
 body{
    /*background-image: linear-gradient(90deg, rgb(156, 242, 253), white);*/
-   background-image: linear-gradient(90deg, rgb(103, 178, 248), white);
+   /*background-image: linear-gradient(90deg, rgb(103, 178, 248), white);*/
+   background-image: linear-gradient(90deg, hsl(7, 18%, 10%),hsl(7, 14%, 13%), rgb(23, 21, 51),hsl(236, 68%, 12%));
    margin-top: 10px;
     margin-left: 60px;
     margin-right: 40px;
@@ -68,12 +69,43 @@ div#menu_start{
 nav#menu_nav > div{
     display: inline-block;
     color:rgb(3, 3, 110);
-    width: 40px;
+    width: 70px;
     height: 5px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-  
+    font-weight: bold;   
+    font-size: large;
+    text-align: center;
+
+    
+}
+
+div#d1:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 10px;
+    border-radius: 10px;
+    
+}
+div#d2:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 10px;
+    border-radius: 10px;
+    
+}
+div#d3:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 10px;
+    border-radius: 10px;    
+}
+div#d4:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 10px;
+    border-radius: 10px;
+    
 }
 
 
