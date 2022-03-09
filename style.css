@@ -45,11 +45,8 @@ main{
 
 .destaque{
     
-    background-color: white;
-    border-radius: 10px;
-    width: 750px;
-    text-align: center;
-    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .banner{
@@ -84,27 +81,27 @@ div#d1:hover{
     color: white;
     background-color: rgb(3, 3, 110);
     height: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 div#d2:hover{
     color: white;
     background-color: rgb(3, 3, 110);
     height: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 div#d3:hover{
     color: white;
     background-color: rgb(3, 3, 110);
     height: 10px;
-    border-radius: 10px;    
+    border-radius: 5px;    
 }
 div#d4:hover{
     color: white;
     background-color: rgb(3, 3, 110);
     height: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 
@@ -113,3 +110,13 @@ nav#menu_nav > p{
     display: none;    
 }
 
+div#div_voltar{
+    background-color: white;
+    border-radius: 20px;
+    width: 70px;
+    height: 40px;
+  padding: 10px;
+  text-align: center;
+    
+    
+}
