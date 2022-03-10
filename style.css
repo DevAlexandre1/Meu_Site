@@ -2,6 +2,14 @@
 /*Configuração global css*/
 
 
+:root{
+    --cormenu: rgb(170, 170, 170);
+    --corh1: rgb(3, 3, 110);
+
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+}
 
 body{
    /*background-image: linear-gradient(90deg, rgb(156, 242, 253), white);*/
@@ -32,9 +40,10 @@ p{
     text-align: justify;
 }
 main{
+    margin: auto;
     background-color: aliceblue;
     border-radius: 15px;
-    width: 650px;
+    width: 1200px;
     padding: 50px;
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
 }
@@ -56,6 +65,7 @@ main{
 }
 
 div#menu_start{
+    margin: auto;
     width: 750px;
     height: 50px;
     border-radius: 10px;
@@ -63,6 +73,7 @@ div#menu_start{
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
    
 }
+
 
 nav#menu_nav > div{
     display: inline-block;
@@ -77,6 +88,7 @@ nav#menu_nav > div{
 
     
 }
+
 
 div#d1:hover{
     color: white;
