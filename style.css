@@ -62,8 +62,9 @@ main{
 
 
 div#menu_start{    
-    min-width: 320;
-    max-width: 1400px;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1240px;
     height: 40px;
     border-radius: 5px;
     background-color: var(--cormenu);
@@ -87,18 +88,6 @@ img#img_banner{
     width: 100%;
 }
 
-
-
-
-
-/*div#d1:hover{
-    color: white;
-    background-color: rgb(3, 3, 110);
-    height: 20px;
-    border-radius: 5px;
-
-    
-}*/
 div#d2:hover{
     color: white;
     background-color: rgb(3, 3, 110);
