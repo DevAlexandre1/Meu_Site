@@ -109,9 +109,6 @@ div#d4:hover{
     
 }
 
-
-
-
 div#div_voltar{
    color: white;
     font: bold;
@@ -123,8 +120,7 @@ div#div_voltar{
 
 nav#nav_galeria > div{
     display: inline-block;
-    color:rgb(3, 3, 110);
-    
+    color:rgb(3, 3, 110);    
     width: 100px;
     height: 5px;
     padding: 10px;
@@ -171,10 +167,11 @@ div#g4:hover{
 }
 
 div#div_galeria{
+    width: 100%;
     margin: auto;
+    min-height: 70px;
     min-width: 320;
-    max-width: 1266px;
-    height: 40px;
+    max-width: 630px;
     border-radius: 5px;
     background-color: var(--cormenu);
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
