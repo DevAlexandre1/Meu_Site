@@ -49,17 +49,15 @@ main{
        color: rgb(3, 3, 110);
 }
 
-
-
-.banner{
-   border-radius: 5px;
-   max-width: 1466px;
-   min-width: 320px;
- 
-
-}
-
-
+    /* Verificar por que a imagem não fica centralizada*/
+ img#img_banner{
+     margin: auto;
+     border-radius: 10px;
+     max-width: 1466px;
+     min-width: 375px;
+     
+     
+ }
 
 div#menu_start{    
     margin: auto;
@@ -83,9 +81,6 @@ nav#menu_nav > div{
     font-size: large;
     text-align: center;
     
-}
-img#img_banner{
-    width: 100%;
 }
 
 div#d2:hover{
@@ -117,7 +112,17 @@ div#div_voltar{
     border-radius: 10px;
        
 }
+div#div_galeria{
+    width: 100%;
+    /*margin: auto;*/
+    min-height: 70px;
+    min-width: 320;
+    max-width: 630px;
+    /*border-radius: 15px;
+    background-color: var(--cormenu);
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);*/
 
+}
 nav#nav_galeria > div{
     display: inline-block;
     color:rgb(3, 3, 110);    
@@ -165,19 +170,6 @@ div#g4:hover{
     border-radius: 5px;
     
 }
-
-div#div_galeria{
-    width: 100%;
-    margin: auto;
-    min-height: 70px;
-    min-width: 320;
-    max-width: 630px;
-    border-radius: 5px;
-    background-color: var(--cormenu);
-    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
-
-}
-
 .text_alin_center{
     text-align: center;
     color: white;
