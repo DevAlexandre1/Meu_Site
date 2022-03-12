@@ -48,11 +48,13 @@ main{
 }
 .sub{
        color: rgb(3, 3, 110);
+       padding: 20px;
 }
 
 sub > a{
 
      color: rgb(3, 3, 110);
+     
     }   
     a:hover{
         color:brown;
@@ -199,9 +201,21 @@ div#g4:hover{
 /*Aqui pra baixo é CSS Pagina Download*/
 
 .musica_down{
-    background-color: blue;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
 
+    height: 800px;
+    padding-left: 50px;
 }
+
+
+.musica_down > div{
+    
+    width: 300px;
+    height: 150px;
+    
+    
+}
+
+.img_down{
+    margin: auto; 
+    padding:10px;
+
