@@ -215,6 +215,8 @@ div#g2:hover{
     width: 294px;
     height: 340px;
     border: 1px solid  black  ;
+    min-width: 320px;
+    max-width: 1200px;
        
 }
 
