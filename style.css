@@ -71,10 +71,8 @@ sub > a{
      margin: auto;
      border-radius: 5px;
      max-width: 1200px;
-     min-width: 375px;
-     box-shadow: 3px;     
-     box-shadow: 2px 2px 1px rgb(3, 3, 110);
-     
+     min-width: 320px;
+         
      
  }
 
