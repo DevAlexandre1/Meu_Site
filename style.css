@@ -211,12 +211,14 @@ div#g2:hover{
     /*Aqui pra baixo div da galeria*/
 
 .div_galeria_img{
+   
     display: inline-block;
     width: 294px;
     height: 340px;
-    border: 1px solid  black  ;
-    min-width: 320px;
-    max-width: 1200px;
+    border: 1px solid  black;
+   min-width: 80px;
+   max-width: 340px;
+   
        
 }
 
