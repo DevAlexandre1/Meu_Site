@@ -209,6 +209,11 @@ div#g2:hover{
     /*Aqui pra baixo div da galeria*/
 
 
+main#Galeria_main{
+    min-width: 550px;
+    max-width: 1200px;
+}
+
 
 .div_galeria_img{
    
