@@ -210,16 +210,24 @@ div#g2:hover{
 }
     /*Aqui pra baixo div da galeria*/
 
+
+.div_imagem{
+    display: flex;
+    flex-flow: row;
+    overflow-x: scroll;
+}    
+
 .div_galeria_img{
    
     display: inline-block;
-    width: 294px;
-    height: 340px;
+    width: 194px;
+    height: 240px;
     border: 1px solid  black;
-   min-width: 80px;
-   max-width: 340px;
-   
-       
+    white-space: nowrap;
+    min-width: 194px;
+   max-width: 294px;
+   min-height: 240px;
+    max-height: 340px;   
 }
 
 .div_galeria_img > h2{
