@@ -70,7 +70,7 @@ sub > a{
  img#img_banner{
      margin: auto;
      border-radius: 5px;
-     max-width: 1466px;
+     max-width: 1200px;
      min-width: 375px;
      box-shadow: 3px;     
      box-shadow: 2px 2px 1px rgb(3, 3, 110);
@@ -211,11 +211,6 @@ div#g2:hover{
     /*Aqui pra baixo div da galeria*/
 
 
-.div_imagem{
-    display: flex;
-    flex-flow: row;
-    overflow-x: scroll;
-}    
 
 .div_galeria_img{
    
