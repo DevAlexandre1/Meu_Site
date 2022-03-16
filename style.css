@@ -214,44 +214,48 @@ main#Galeria_main{
     max-width: 1200px;
 }
 
-.container{
+.conteiner{
     position: relative;
     display: none;
     width: 60%;
     margin: auto;
 }
 
-.container img{
-    width: 100%;
+.conteiner img{
+    margin-top: 15px;
+    border: 1px solid black;
+    width: 90%;
+    
 }
 
 .btnFechar{
-    position: relative;
+    position: absolute;  
     top:10px;
     font-size: 50px;
-    right: 15px;
-    color: white;
+    right: 1px;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 
 }
 
 .div_galeria_img{
-   
+
     display: inline-block;
     width: 174px;
     height: 280px;
     border: 1px solid  black;
     
-  
 }
 
 
 .div_galeria_img img{
     cursor: pointer;
     opacity: 0.7;
+    width: 174px;
+    height: 102px;
 }
 .div_galeria_img img:hover{
-    opacity: 1.0;
+    opacity: 1;
 }
 
 
