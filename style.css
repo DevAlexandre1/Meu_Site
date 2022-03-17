@@ -19,8 +19,10 @@
 
 
 body{
+    /*background-color: hsl(7, 18%, 10%);*/
    background-image: linear-gradient(90deg, hsl(7, 18%, 10%),hsl(7, 14%, 13%), rgb(23, 21, 51),hsl(236, 68%, 12%));
-   margin-top: 10px;
+   margin: 0px;
+   
 }
 
 h1 {
@@ -40,10 +42,12 @@ p{
 main{
     margin: auto;
     background-color: aliceblue;
-    min-width: 375px;
+    min-width: 340px;
     max-width: 1200px;
-    padding: 15px;
+    padding: 5px;
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+    border:0px;
+    
    
 }
 .sub{
@@ -71,14 +75,14 @@ sub > a{
      margin: auto;
      border-radius: 5px;
      max-width: 1200px;
-     min-width: 375px;
+     min-width: 340px;
          
      
  }
 
 div#menu_start{    
     margin: auto;
-    min-width: 375px;
+    min-width: 340px;
     max-width: 1240px;
     height: 40px;
     border-radius: 5px;
@@ -282,10 +286,19 @@ main#Galeria_main{
     padding: 1px;
     font-size: 11px;
     text-align: justify;
+    width: 140px;
+    margin: 0px;
 }
 
 
 .div_galeria_img:hover{
     border: 1px solid blue;
    
+}
+
+
+
+footer p{
+    margin: 2px;
+    padding: 2px;
 }
