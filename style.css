@@ -3,7 +3,7 @@
 
 
 :root{
-    --cormenu: rgb(159, 162, 172);
+    --cormenu: rgb(115, 117, 126);
     --corh1: rgb(3, 3, 110);
 
 
@@ -16,7 +16,10 @@
     
 }
 
-
+header a{
+    color: white;
+    text-decoration: none;
+}
 
 body{
     /*background-color: hsl(7, 18%, 10%);*/
@@ -85,6 +88,7 @@ div#menu_start{
     min-width: 340px;
     max-width: 1240px;
     height: 40px;
+    border: 1px solid black;
     border-radius: 5px;
     background-color: var(--cormenu);
     box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
@@ -105,7 +109,6 @@ nav#menu_nav > div{
     
     
 }
-
 div#d2:hover{
     color: white;
     background-color: rgb(3, 3, 110);
@@ -156,8 +159,12 @@ nav#nav_galeria > div{
     font-weight: bold;   
     font-size: large;
     text-align: center;
+    text-decoration: none;
+    color: white;
 
 }
+
+
 div#g0:hover{
     color: white;
     background-color: rgb(3, 3, 110);
@@ -272,6 +279,9 @@ main#Galeria_main{
 
 
 }
+
+/*Backgroud-size: cover   muito bom para imagem de fundo
+  Background attachment: fixed*/
 
 .info_car{
     text-align: initial;
