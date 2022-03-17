@@ -271,7 +271,7 @@ main#Galeria_main{
 
 .info_car{
     text-align: initial;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0px; 
     border: 0px;
     padding-left: 27px;
@@ -279,7 +279,9 @@ main#Galeria_main{
 }
 
 .info_car li{
-    padding: 2px;
+    padding: 1px;
+    font-size: 12px;
+    text-align: justify;
 }
 
 
