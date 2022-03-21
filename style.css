@@ -324,6 +324,41 @@ main#Galeria_main{
     margin: auto;
 }
 
+/* Daqui para baixo é a página CURSOS*/
+
+#cursos_main{
+    padding-left: 15px;
+}
+
+#tabela{
+    padding-left: 20px;
+    width: 600px;
+    height: 400px;
+    
+    
+    
+}
+
+.tab_cursos  td{
+    border: 1px solid black;
+    width: 120px;
+    text-align: center;
+    color: black;
+    font-size: medium;
+    font-display: bold;
+    height: 30px;
+    font-weight: bold;
+   
+  
+}
+
+.tab_cursos td:hover{
+    background-color: rgb(3, 3, 110);
+    cursor: pointer;
+    
+    color: white;
+}
+
 
 footer p{
     margin: 2px;
