@@ -235,6 +235,7 @@ div#g2:hover{
 
 
 main#Galeria_main{
+    padding-left: 20px;
     min-width: 550px;
     max-width: 1200px;
 }
