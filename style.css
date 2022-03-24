@@ -38,11 +38,16 @@ h1 {
     font-size: 35px;
 
 }
+
 h2#bio{
     color:black;
     font-size:medium;
+    padding-top: 40px;
 }
+
 p{
+    
+    padding-left: 25px;
     text-align: justify;
 }
 
@@ -59,7 +64,8 @@ main{
 }
 .sub{
        color: rgb(3, 3, 110);
-       padding: 20px;
+       padding-left: 10px;
+       padding-top: 10px;
 }
 
 sub > a{
@@ -364,4 +370,5 @@ main#Galeria_main{
 footer p{
     margin: 2px;
     padding: 2px;
+    text-shadow: 2px 2px 1px black;
 }
