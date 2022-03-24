@@ -4,3 +4,8 @@ function mostrarImagem(img){
    imagemGrande.parentElement.style.display="block";
    
 }
+
+function abrirscurso{
+   var a = window.document.getElementById('sitecurso');
+   a.
+}

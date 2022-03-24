@@ -80,10 +80,14 @@ sub > a{
     }   
     a:active{
     color:yellow
+
+    
 }
 
 
         
+
+
  img#img_banner{
      margin: auto;
      border-radius: 5px;
