@@ -5,7 +5,7 @@ function mostrarImagem(img){
    
 }
 
-function abrirscurso{
+/*function abrirscurso{
    var a = window.document.getElementById('sitecurso');
    a.
-}
+}*/
