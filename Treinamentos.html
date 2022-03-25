@@ -13,17 +13,19 @@
 
         <div id="imc">
             <h2>Calculando IMC</h2>
-            <h3 style="padding-top: 20px; padding-bottom: 20px;">O que é IMC?</h3>
+            <h3>O que é IMC?</h3>
             <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
 
                 O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre <strong>18,5 e 24,9.</strong>
                 
                 Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
 
-            <div id="dados_pessoal">    
-                Informe sua altura: <input type="number" name="txtaltura" id="txtaltura">
-                Informe seu peso: <input type="number" name="txtpeso" id="txtpeso">
+            <div id="dados_pessoal">   
+                                
+                <p>Informe sua altura:</p> <input type="number" name="txtaltura" id="txtaltura"><br>
+                <p>Informe seu peso: </p> <input type="number" name="txtpeso" id="txtpeso"><br>
                 <input type="button" value="Verificar" onclick="Calcular()">
+                
             </div>
 
             <div id="div_imc">
@@ -45,19 +47,18 @@
                         <td>0</td>
                     </tr>
                     <tr>
-                        <td>Entre que 18,5 e 24,9</td>
+                        <td>Entre que 25 e 29,9</td>
                         <td>Sobrepeso</td>
                         <td>I</td>
                     </tr>
                     
                     <tr>
-                        <td>Entre que 25,0 e 29,9</td>
+                        <td>Entre que 30 e 39,9</td>
                         <td>Obesidade</td>
                         <td>II</td>
                     </tr>
-                    
                     <tr>
-                        <td>Entre que 30 e 39,9</td>
+                        <td>Acima de 40</td>
                         <td>Obesidade grave</td>
                         <td>III</td>
                     </tr>
@@ -81,10 +82,37 @@
             
 
             switch (res){
-                case res < 18,5
-                restela.innerHTML = `
-                    
+                case res < 18.5 :
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`
+                break;
+                
             }
+            switch (res){
+                case res > 18.5  &&  res < 24.9:
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`
+                break;
+                
+            }
+            switch (res){
+                case res > 25  &&  res < 29.9:
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é I</h2>`
+                break;
+            
+            }
+            switch (res){
+                case res > 30  &&  res < 39.9:
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é II</h2>`
+                break;
+            
+            }
+            switch (res){
+                case res > 40:
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é III</h2>`
+                break;
+            
+            }
+            
+            
 
         </script>
 
