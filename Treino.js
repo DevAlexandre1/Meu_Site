@@ -1,5 +1,4 @@
-//Treinando condições
-
+/*//Treinando condições
 let salarioMes;
 salarioMes = 2500;
 
@@ -43,4 +42,59 @@ for(let i = 0; i < 20; i++){
         console.log('Numeros pares',i);
     }
     
+}
+
+//Treinando fizzBuzz
+
+/*Se o valor fizzbuzz for:
+dividido por 3 => retornar Fizz
+dividido por 5 => retornar Buss
+dividido por 3 e 5 => retornar fizzBuss
+Não dividido por 3 ou  5 => retornar a entrada
+Não é um numero => retornar 'Não é um numero'
+
+*/
+//IMPORTANTE ----> fizzBuzz compara valores baseados com o tipo de entrada!
+
+/*
+let resultado = fizzBuzz(100);
+console.log(resultado);
+
+function fizzBuzz(entrada){
+
+    //Se o valor não for numero
+    if(typeof entrada !== 'number')
+    return 'Não é um numero';
+    if((entrada % 3 === 0) && (entrada % 5 === 0))
+    return 'fizzBuzz';
+    if(entrada % 3 === 0)
+    return 'fizz';
+    if(entrada % 5 === 0)
+    return 'Buzz';
+
+    return entrada;
+}*/
+
+let n = 100;
+
+for(let i = 0; i < n;i++){
+
+    let resultado = fizzBuzz(i);
+    console.log(resultado);
+
+
+    function fizzBuzz(entrada){
+
+        //Se o valor não for numero
+        if(typeof entrada !== 'number')
+        return 'Não é um numero';
+        if((entrada % 3 === 0) && (entrada % 5 === 0))
+        return 'fizzBuzz';
+        if(entrada % 3 === 0)
+        return 'fizz';
+        if(entrada % 5 === 0)
+        return 'Buzz';
+
+        return entrada;
+    }
 }
