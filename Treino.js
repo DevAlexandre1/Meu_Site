@@ -73,7 +73,7 @@ function fizzBuzz(entrada){
     return 'Buzz';
 
     return entrada;
-}*/
+}
 
 let n = 100;
 
@@ -96,5 +96,31 @@ for(let i = 0; i < n;i++){
         return 'Buzz';
 
         return entrada;
+    }
+}*/
+//Mais de uma condicional
+// Calculando velocidade maxima
+
+/*  Velocidade maxima permitida é até 70;
+    A cada 5km de velocidade acima do permitido é colocado 1 ponto na carteira;
+    math.Floor() está função arredonda o valor da variável;
+    Caso pontos maior que 12, retornar 'Carteira suspensa';
+
+*/
+
+verificarVelocidade(120);
+
+function verificarVelocidade(velocidade){
+    const velocidadeMaxima = 70;
+    const kmPorPonto = 5;
+
+    if(velocidade <= velocidadeMaxima)
+    console.log('Velocidade permitida');
+    else{
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPonto));
+        if (pontos >= 12)
+            console.log('Carteira suspensa');
+        else
+            console.log('Acima da velocidade, recebeu', pontos, 'pontos.')
     }
 }
