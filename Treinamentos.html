@@ -83,44 +83,41 @@
         </div>
 
         <script>
-            var txtpeso = window.document.querySelector('input#txtpeso')
-            var txtaltura = window.document.querySelector('input#txtaltura')
-            var restela = window.document.querySelector('div#resultado')
-            var peso = Number(txtpeso.value)
-            var altura = Number(txtaltura)
-            var res = peso / altura**2
-
+            let txtpeso = window.document.querySelector('input#txtpeso')
+            let txtaltura = window.document.querySelector('input#txtaltura')
+            let restela = window.document.querySelector('div#resultado')
+            let peso = Number(txtpeso.value)
+            let altura = Number(txtaltura.value)
             
 
-            switch (res){
-                case res < 18.5 :
-                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`
-                break;
-                
+            function calcular(){
+                res = peso / altura**2;
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
             }
+
             switch (res){
+                case (res < 18.5):
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
+                break;
+            
                 case res > 18.5  &&  res < 24.9:
-                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
                 break;
-                
-            }
-            switch (res){
+                   
                 case res > 25  &&  res < 29.9:
-                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é I</h2>`
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é I</h2>`;
                 break;
             
-            }
-            switch (res){
                 case res > 30  &&  res < 39.9:
-                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é II</h2>`
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é II</h2>`;
                 break;
-            
-            }
-            switch (res){
+        
                 case res > 40:
-                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é III</h2>`
+                restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é III</h2>`;
                 break;
-            
+
+                default:
+                    console.log('Dados informados incorretos!');
             }
             
             
