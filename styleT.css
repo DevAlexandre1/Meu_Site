@@ -1,8 +1,22 @@
 @charset "utf-8";
 
+:root{
+    --cormenu: rgb(115, 117, 126);
+    --corh1: rgb(3, 3, 110);
 
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+}
 *{
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -23,6 +37,69 @@ h2{
 h3{
     padding-left: -10px;
 }
+
+.text_alin_center{
+    text-align: center;
+    color: white;
+    font: bold;
+}
+
+div#g0:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 20px;
+    border-radius: 5px;
+    
+}
+
+body{
+    /*background-color: hsl(7, 18%, 10%);*/
+   /*background-image: linear-gradient(90deg, hsl(7, 18%, 10%),hsl(7, 14%, 13%), rgb(23, 21, 51),hsl(236, 68%, 12%));*/
+   background-image: url(imagens/galeria/Backgroud/Pagina\ inicial.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 0px;
+   
+}
+
+main{
+    margin: auto;
+    background-color: aliceblue;
+    min-width: 340px;
+    max-width: 1200px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+    border:0px;
+    
+   
+}
+div#menu_start{    
+    margin: auto;
+    min-width: 340px;
+    max-width: 1220px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--cormenu);
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+
+   
+}
+
+
+nav#menu_nav > div{
+    display: inline-block;
+    color:rgb(3, 3, 110);
+    width: 80px;
+    height: 5px;
+    padding: 10px;  
+    font-weight: bold;   
+    font-size: large;
+    text-align: center;
+    
+    
+}
+
 #imc{
     padding-left: 50px;
     text-align: justify;
@@ -31,6 +108,8 @@ h3{
 
 
 }
+
+
 
 #dados_pessoal{
     text-align: center;
@@ -79,4 +158,10 @@ td{
     background-color: brown;
     width: 400px;
     height: 50px;
+}
+
+footer p{
+    margin: 2px;
+    padding: 2px;
+    text-shadow: 2px 2px 1px black;
 }
