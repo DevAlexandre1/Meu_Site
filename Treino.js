@@ -143,7 +143,7 @@ for(let i = 0; i <= v1; i++){
     }
 }
 
-*/
+
 //Criar um método que verifica as propriedades de um objeto e traz apenas os tipos string
 
 const  filme ={
@@ -162,3 +162,57 @@ function exibirPropriedade(obj){
         }
     
 }
+
+let salarioMes;
+salarioMes = 1800;
+
+
+if(salarioMes < 1000){
+    console.log('Abaixo do esperado');
+}
+if((salarioMes > 1000) && (salarioMes < 1500)){
+    console.log('Salário esperado');
+}
+if((salarioMes > 1501) && (salarioMes < 2000)) {
+    console.log('Salário atual');
+}    
+if((salarioMes > 2001) && (salarioMes < 2500)) {
+    console.log('Salário acima do esperado');
+}   
+if(salarioMes > 2500) {
+    console.log('Salário muito acima do esperado');
+}   
+*/
+
+peso = 80;
+altura = 1.80;
+
+res = Math.floor( peso / altura**2);
+
+function calcular(res){
+
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
+
+}
+
+if(res < 18.5){
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
+    console.log('Seu IMC é', res,'Seu grau de gordura é 0')
+}
+if(( res > 18.5)  &&  (res < 24.9)){
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é 0</h2>`;
+    console.log('Seu IMC é', res,'Seu grau de gordura é 0')
+}
+if((res > 25 ) &&  (res < 29.9)) {
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é I</h2>`;
+    console.log('Seu IMC é', res,'Seu grau de gordura é I')
+}    
+if((res > 30)  &&  (res < 39.9)) {
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é II</h2>`;
+    console.log('Seu IMC é', res,'Seu grau de gordura é II')
+}   
+if(res > 40) {
+    //restela.innerHTML = `<h2>Seu IMC é ${res} e seu grau de obesidade é III</h2>`;
+    console.log('Seu IMC é', res,'Seu grau de gordura é III')
+}   
+        
