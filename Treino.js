@@ -1,4 +1,5 @@
-/*//Treinando condições
+//Treinando condições
+/*
 let salarioMes;
 salarioMes = 2500;
 
@@ -53,10 +54,10 @@ dividido por 3 e 5 => retornar fizzBuss
 Não dividido por 3 ou  5 => retornar a entrada
 Não é um numero => retornar 'Não é um numero'
 
-*/
+
 //IMPORTANTE ----> fizzBuzz compara valores baseados com o tipo de entrada!
 
-/*
+
 let resultado = fizzBuzz(100);
 console.log(resultado);
 
@@ -97,7 +98,7 @@ for(let i = 0; i < n;i++){
 
         return entrada;
     }
-}*/
+}
 //Mais de uma condicional
 // Calculando velocidade maxima
 
@@ -106,9 +107,9 @@ for(let i = 0; i < n;i++){
     math.Floor() está função arredonda o valor da variável;
     Caso pontos maior que 12, retornar 'Carteira suspensa';
 
-*/
 
-verificarVelocidade(120);
+
+verificarVelocidade(100);
 
 function verificarVelocidade(velocidade){
     const velocidadeMaxima = 70;
@@ -123,4 +124,41 @@ function verificarVelocidade(velocidade){
         else
             console.log('Acima da velocidade, recebeu', pontos, 'pontos.')
     }
+}
+
+
+const v1 = 50;
+for(let i = 0; i <= v1; i++){
+    valorverificar(v1);
+
+    function valorverificar(entrada){
+       entrada = i;
+        if(entrada % 2 === 0){
+            console.log(entrada, 'Par');
+
+        }
+        else{
+            console.log(entrada,'Impar');
+        }
+    }
+}
+
+*/
+//Criar um método que verifica as propriedades de um objeto e traz apenas os tipos string
+
+const  filme ={
+    Titulo: 'Homem de ferro',
+    Ano: 2022,
+    Personagem: 'Tony Stark',
+    Valor: 250.000
+
+}
+exibirPropriedade(filme);
+function exibirPropriedade(obj){
+    
+    for(prop in obj)
+        if(typeof obj[prop] === 'string'){
+            console.log(prop,obj[prop])
+        }
+    
 }
