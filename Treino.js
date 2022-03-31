@@ -238,7 +238,7 @@ function somar(limite){
     console.log('-----------------RESULTADO-----------------')
     console.log('O Valor da soma de todos os numeros é', soma )
     console.log('-------------------------------------------')
-}*/
+}
 
 //Exercicio nota escolar, obter a media das notas dos alunos de um array
 
@@ -272,3 +272,4 @@ function calcularMedia(array){
 }
 
 
+*/
