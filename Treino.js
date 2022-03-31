@@ -182,7 +182,7 @@ if((salarioMes > 2001) && (salarioMes < 2500)) {
 if(salarioMes > 2500) {
     console.log('Salário muito acima do esperado');
 }   
-*/
+
 
 peso = 80;
 altura = 1.80;
@@ -216,3 +216,59 @@ if(res > 40) {
     console.log('Seu IMC é', res,'Seu grau de gordura é III')
 }   
         
+
+
+//criar funça~o somar que retonra a soma de todos os multiplos de 3 e 5
+somar(100);
+function somar(limite){
+    let soma = 0;
+    for(let i = 1; i <= limite;i++){
+        if(i % 3 === 0){
+            soma = soma + i;
+            console.log(i,'Multiplo de 3')
+        }
+        if(i % 5 === 0){
+            console.log(i,'Multiplo de 5')
+            soma = soma + i;
+        }
+        else{
+            console.log(i)
+        }
+    }
+    console.log('-----------------RESULTADO-----------------')
+    console.log('O Valor da soma de todos os numeros é', soma )
+    console.log('-------------------------------------------')
+}*/
+
+//Exercicio nota escolar, obter a media das notas dos alunos de um array
+
+//0-59: E
+//60-69: D
+//70-79:C
+//80-90:B
+//91-100:A
+
+const array = [70,70,80];
+
+console.log(mediaDoAluno(array));
+function mediaDoAluno(notas){
+     const media = calcularMedia(notas);            
+      
+     if(media<59) return 'F';
+     if(media<69) return 'D';
+     if(media<79) return 'C';
+     if(media<89) return 'B';
+     return 'A'
+}
+
+
+
+function calcularMedia(array){
+    let soma = 0;
+    for(let valor of array){
+        soma += valor;
+    }
+    return soma/(array.length);
+}
+
+
