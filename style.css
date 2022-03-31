@@ -371,8 +371,6 @@ main#Galeria_main{
 
 .tab_cursos td:hover{
     background-color: rgb(3, 3, 110);
-    cursor: pointer;
-    
     color: white;
 }
 
