@@ -439,6 +439,83 @@ const celular2= {...celular};
 console.log(celular2);
 ******************************************
 
-*/
 
+
+//Função MATH - VARIAS FUNÇÕES E COMANDO PDF SALVO EM DOCS
+
+//DATA - COMANDOS SALVOS EM PDF NA PASTA DOCS
+
+TREINANDO FUNÇÕES
+
+function endereco(rua,cidade,cep){
+    return{
+    rua,
+    cidade,
+    cep,
+    exibirEndereco(){
+        console.log(endereco1);
+    }
+    }
+}
+
+const endereco1 = endereco('ruaA','Uberaba',38066000);
+endereco1.exibirEndereco();
+
+
+
+
+//Brincando com os objetos
+
+function carro(modelo,ano,valor,cor){
+    return{
+        modelo,
+        ano,
+        valor,
+        cor,
+        exibirVelocidade(){
+            console.log('Velocidade atual do carro é',180,'Km');
+        },
+        exibirTemperatura(){
+            console.log('Temperatura atual do carro é',90,'graus');
+        }
+    }
+}
+
+const carroA = carro('Palio', 2022,50,'Preto');
+const CarroB = carro('Gol',2018,30,'Braco');
+
+//carroA.exibirTemperatura();
+
+//console.log(CarroB);
+//CarroB.exibirVelocidade();
+
+carroA.cor = 'verde';
+
+console.log(carroA.ano);
+
+
+*/
+//Exercicio Comparando igualdade entre objetos
+
+function endereco(rua, cidade, cep){
+    this.rua = rua;
+    this.cidade = cidade;
+    this.cep = cep
+
+}
+
+const endereco1 = new endereco('a','b','c');
+const endereco2 = new endereco('a','b','c');
+
+function saoIguais(endereco1,endereco2){
+    return endereco1.rua === endereco2.rua &&
+            endereco1.cidade === endereco2.cidade &&
+            endereco1.cep === endereco2.cep
+
+}
+console.log(saoIguais(endereco1,endereco2));
+
+function temEnderecoMemoriaIguais(endereco1,endereco2){
+
+}
 
