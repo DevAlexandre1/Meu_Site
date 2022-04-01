@@ -272,4 +272,39 @@ function calcularMedia(array){
 }
 
 
+
+
+exibirAsterisco(10);
+
+function exibirAsterisco(linhas){
+let aste = '';
+
+    for(let i = 0; i <= linhas;i++){
+        aste = aste + '*';
+        console.log(aste)
+    }
+}
 */
+
+//Exibir numeros primos
+//IMPORTANTE SEMPRE QUEBRAR FUNCOES(Componentes)
+
+exibirNprimos(15);
+function exibirNprimos(limite){
+
+	for(let numero = 2; numero <= limite; numero++){	
+
+        if(numeroprimo(numero)) console.log(numero);
+	}
+}
+
+function numeroprimo(numero){
+		
+    for(let divisor = 2;divisor<numero;divisor++){
+    
+        if(numero % divisor ===0){
+           return false;          
+        }
+    }
+    return true;
+}
