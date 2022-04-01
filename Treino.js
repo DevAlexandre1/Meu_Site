@@ -308,10 +308,9 @@ function numeroprimo(numero){
     }
     return true;
 }
-*/
 
 
-//Simplificando objetos e funções IMPORTANTE
+//Simplificando objetos e funções IMPORTANTE - função de fabrica
 
 const celular = {
 	marcaCelular: 'Asus',
@@ -343,4 +342,103 @@ function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria){
 
 const celular1 = criarCelular('Asus',5.5,5000);
 console.log(celular1);
+
+//Função construtor
+
+//camelCase
+function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria){
+	return{
+		marcaCelular,
+		tamanhoTela,
+		capacidadeBateria,
+		ligar(){
+			console.log("Fazendo ligação...")
+
+		}
+	}
+}
+//Pascal case - Metodo construtor
+
+function Celular(marcaCelular,tamanhoTela,capacidadeBateria){
+    this.marcaCelular = marcaCelular,
+    this.tamanhoTela = tamanhoTela,
+    this.capacidadeBateria= capacidadeBateria,
+    this.ligar = function(){
+            console.log("Fazendo Ligação...")
+    }
+}
+
+const celular = new Celular('Asus', 5.5,5000 );
+console.log(celular);
+
+celular.ligar();
+
+
+function Carro(modeloCarro,anoCarro,valorCarro){
+    this.modelo = modeloCarro,
+    this.ano =  anoCarro,
+    this.valor = valorCarro,
+    this.andar = function(){
+        console.log("Carro andando")
+    }
+}
+const CarroA = new Carro('Gol',2010,29.000);
+console.log(CarroA);
+CarroA.andar();
+
+//Objetos em JS são totalmente dinamicos
+//Exemplo
+
+const mouse = {
+    cor: 'red',
+    marcar: 'dazz'
+}
+
+//voce pode inserir atributos ao objeto de qualquer parte
+
+mouse.velocidade = 500;
+
+// voce pode adicionar função ao objeto de qualquer parte
+
+mouse.trocarDPI= function(){
+    console.log('Mudando DPI');
+}
+
+//Voce pode deletar função ou atributo do objeto de onde estiver
+
+delete mouse.cor;
+mouse.trocarDPI();
+console.log(mouse);
+
+
+//Clonar objetos 
+
+
+const celular = {
+	marcaCelular: 'Asus',
+	tamanhoTela: {
+		vertical: 155,
+		horizontal:75
+	},
+	capacidadeBateria: 5000,
+	ligar: function(){
+		console.log("Fazendo ligação...")
+	}
+}
+
+//clocando o objeto acima
+
+const novoCelular = Object.assign({},celular);
+console.log(novoCelular);
+novoCelular.ligar();
+
+*****************************************
+//FORMA SIMPLIFICADA DE CLONAR OBJETOS
+
+const celular2= {...celular};
+console.log(celular2);
+******************************************
+
+*/
+
 
