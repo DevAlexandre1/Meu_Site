@@ -284,7 +284,7 @@ let aste = '';
         console.log(aste)
     }
 }
-*/
+
 
 //Exibir numeros primos
 //IMPORTANTE SEMPRE QUEBRAR FUNCOES(Componentes)
@@ -308,3 +308,39 @@ function numeroprimo(numero){
     }
     return true;
 }
+*/
+
+
+//Simplificando objetos e funções IMPORTANTE
+
+const celular = {
+	marcaCelular: 'Asus',
+	tamanhoTela: {
+		vertical: 155,
+		horizontal:75
+	},
+	capacidadeBateria: 5000,
+	ligar: function(){
+		console.log("Fazendo ligação...")
+	}
+}
+
+//MODO SIMPLIFICADO IMPORTANTE
+
+function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria){
+	return{
+		marcaCelular,
+		tamanhoTela,
+		capacidadeBateria,
+		ligar(){
+			console.log("Fazendo ligação...")
+
+		}
+	}
+}
+
+//Criando um objeto celular
+
+const celular1 = criarCelular('Asus',5.5,5000);
+console.log(celular1);
+
