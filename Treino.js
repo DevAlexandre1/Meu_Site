@@ -494,7 +494,7 @@ carroA.cor = 'verde';
 console.log(carroA.ano);
 
 
-*/
+
 //Exercicio Comparando igualdade entre objetos
 
 function endereco(rua, cidade, cep){
@@ -515,7 +515,55 @@ function saoIguais(endereco1,endereco2){
 }
 console.log(saoIguais(endereco1,endereco2));
 
+
+//mostra se os dados estão salvos no mesmo local de memoria
 function temEnderecoMemoriaIguais(endereco1,endereco2){
 
+    return endereco1 === endereco2;
+
 }
+console.log(temEnderecoMemoriaIguais(endereco1,endereco2));
+
+
+
+//CRIAR UM OBJETO QUE EXIBIRA AS SEGUINTES PROPRIEDADES: TITULO, MENSAGEM, AUTOR, VIZUALIZACOES, COMENTARIOS(AUTOR, MENSAGEM),ESTAO AO VIVO
+
+//Leitura: O objeto postagem é declarado suas propriedades e já recebendo seus atributos
+
+let postagem = {
+    titulo : 'x=men',
+    mensagem : 'Ola',
+    autor : 'eu',
+    vizualizacoes : 123,
+    //Abaixo é um array
+    comentarios : [
+        {autor:'a', mensagem:'b'},
+        {autor: 'b', mensagem: 'b'}
+
+    ],
+    estaoAoVivo : true
+
+}
+
+console.log(postagem);
+
+
+
+*/
+
+//FUNÇÃO CONTRUTOR DE OBJETOS
+function postagem(titulo,mensagem,autor){
+    this.titulo =titulo,
+    this.mensagem =mensagem,
+    this.autor = autor,
+    this.visualizacoes =0,
+    this.comentarios=[],
+    this.estaAoVivo = false 
+}
+
+
+
+let postagem1 = new postagem('Jurassic','Meu filme preferido','Jhon')
+
+    console.log(postagem1);
 
