@@ -549,7 +549,7 @@ console.log(postagem);
 
 
 
-*/
+
 
 //FUNÇÃO CONTRUTOR DE OBJETOS
 function postagem(titulo,mensagem,autor){
@@ -567,3 +567,37 @@ let postagem1 = new postagem('Jurassic','Meu filme preferido','Jhon')
 
     console.log(postagem1);
 
+       //DECLARANDO ARRAY
+            const n = [] //Declarando um array vazio
+            const n2 = [True, "Daniel", 28, new Array[2, 10, 25]]//Declarabdo um array com variáveis
+            n[0] = "cMarcos" //atribuindo valor marcos a posição 0 do array n
+            n[1] = "Lucas" //atribuindo valor Lucas a posição 1 do array n
+            console.log(n) //Mostrando os valores das posições do array n
+            console.log(n2[3][2]) //Mostrando o valor da posição 2 do array que esta na posição 3.
+            n.push("a") // definindo valor de dentro do array na posição 0
+            n.push[3]("d") // definindo valor de dentro do array na posição 4
+
+            //DECLARANDO OBJETOS
+
+            const pessoa = {
+                nome: "Daniel",
+                idade: 40
+
+            }
+
+            pessoa.nome = "Lucas"
+            console.log(pessoa)
+            console.log(pessoa.nome)
+            console.log(pessoa["idade"]
+            )
+
+
+            const carro ={
+                modelo: "Gol",
+                valor: 28.000,
+                ano: 2010,
+                testedriver(){
+                    console.log("testando")
+                }
+            }
+*/
