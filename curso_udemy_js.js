@@ -1,38 +1,24 @@
-    const inpAltura = document.getElementById("txtaltura")
-    const inpPeso = document.getElementById("txtpeso")
-    const divResultado = document.getElementById("resultado")
-    
-    
-    let resultadoIMC = 0
-    resultadoIMC = Math.floor(inpPeso / (inpAltura**2))   
-    
+//Métodos dentro de objetos
 
-    function calcular(){
-        
-        if(resultadoIMC < 18.5){
-            divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é 0`);
-            return
-        }
-        if((resultadoIMC > 18.5)  &&  (res < 24.9)){
-            divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é 0`);
-            return
-        }
-        if((resultadoIMC > 25 ) &&  (resultadoIMC < 29.9)) {
-            divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é I`);
-            return
-        }    
-        if((resultadoIMC > 30)  &&  (resultadoIMC < 39.9)) {
-            divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é II`);
-            return
-        }   
-        if(resultadoIMC > 40) {
-            divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é III`);
-            return
-        }else{
-            divResultado.innerHTML = (`Não passou pelos IFs${resultadoIMC} `)
-            return
-        }
+const lapis ={
+    modelo: "preto",
+    qtd: 10,
+    comprar(nqtd){
+       if(nqtd > this.qtd){
+          console.log(`Quantidade insuficiente, maximo de lapis em estoque: ${lapis.qtd} unidades`)
+       }else{
+          lapis.qtd -= nqtd
+          console.log('Compra realizada com sucesso')
+          console.log(`Quantidade restante no estoque: ${lapis.qtd} unidades.`)
+ 
+       }
+    },
+    reporEstoque(reporEstoque){
+       this.qtd += reporEstoque
+       console.log(`Estoque reposto, quantidade atual: ${lapis.qtd}`)
     }
-
-
     
+ }
+ 
+ //lapis.comprar(8)
+ lapis.reporEstoque(50)
