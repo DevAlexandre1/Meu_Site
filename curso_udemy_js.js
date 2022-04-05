@@ -1,3 +1,4 @@
+/*
 //Métodos dentro de objetos
 
 const lapis ={
@@ -22,3 +23,29 @@ const lapis ={
  
  //lapis.comprar(8)
  lapis.reporEstoque(50)
+*/
+
+ //Objetos dentro de Arrays
+
+ const pessoas = [{
+     nome: "Carlos",
+     idade: 30
+ },
+ {
+    nome: "Iolanda",
+    idade: 40
+}
+,
+ {
+    nome: "Marcos",
+    idade: 20
+}
+,
+ {
+    nome: "Lilia",
+    idade: 10
+}]
+
+//console.log(pessoas)
+//Qual a idade da pessoa que esta no indice 3
+console.log(pessoas[2].idade)
