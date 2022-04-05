@@ -23,29 +23,65 @@ const lapis ={
  
  //lapis.comprar(8)
  lapis.reporEstoque(50)
-*/
+
 
  //Objetos dentro de Arrays
 
  const pessoas = [{
      nome: "Carlos",
-     idade: 30
- },
+     idade: 30 },
  {
     nome: "Iolanda",
-    idade: 40
-}
-,
+    idade: 40 },
  {
     nome: "Marcos",
-    idade: 20
-}
-,
+    idade: 20 },
  {
     nome: "Lilia",
-    idade: 10
-}]
+    idade: 10}]
 
-//console.log(pessoas)
-//Qual a idade da pessoa que esta no indice 3
-console.log(pessoas[2].idade)
+let posi = pessoas.length
+//console.log(posi)
+
+for(let i = 0; i <= posi;i++){
+    let lugar = i
+    console.log(`O Nome da pessoa da posição ${lugar}:  ` + `${pessoas[lugar].nome}`)
+    console.log(`A idade da pessoa da posição ${lugar}:  ` + `${pessoas[lugar].idade} anos`)
+    console.log('###################################################################')
+    
+}
+//CRIAR UM ARRAY COM NUMEROS RANDOMICOS NÃO REPETIDOS 
+
+function generateRandomInteger(max){
+    return parseInt(Math.random()*max)
+}
+
+    let arr = []
+
+    while(arr.length <= 20){
+        let randomNumero = generateRandomInteger(30)
+        
+        if(arr.indexOf(randomNumero) < 0){
+            arr.push(randomNumero)
+        }else{
+            console.log(randomNumero, "Já existe no Array")
+        }
+    }
+    console.log(arr)
+    
+    */
+
+    //UTILIZANDO O TRY CATCH
+
+
+    //se o comando dentro de TRY gerar erro o CATCH captura o erro
+    let soma = ""
+
+    try{
+        soma=(3,"a")
+    }catch(e){
+        alert("Sum aceita apenas numeros")
+        console.log(e.message)
+    }finally{
+        console.log("Este bloco finally é sempre executado, independente da situação dos blocos acima")
+    }
