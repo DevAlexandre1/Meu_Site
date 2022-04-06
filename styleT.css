@@ -58,7 +58,7 @@ body{
    background-image: url(imagens/galeria/Backgroud/Pagina\ inicial.jpg);
    background-size: cover;
    background-attachment: fixed;
-   margin: 0px;
+   
    
 }
 
@@ -113,7 +113,7 @@ nav#menu_nav > div{
 
 #dados_pessoal{
     text-align: center;
-    display: inline-block;
+    /*display: inline-block;*/
     width: 350px;
     background-color: blue;
     padding-top: 0px;
@@ -153,11 +153,12 @@ td{
 }
 
 #resultado{    
-    color: black;
-    padding: 20px;
-    background-color: bisque;
-    width: 400px;
-    height: 150px;
+    background-color: blue;
+    width: 361px;
+    height: 64px;
+    border-radius: 17px;
+    margin-top: 18px;
+    color: white;
 }
 
 footer p{
@@ -166,21 +167,82 @@ footer p{
     text-shadow: 2px 2px 1px black;
 }
 
+#main_treinamento{
+    width: 100%;
+    margin: auto;
+    background-color: aliceblue;
+    min-width: 642px;
+    max-width: 1200px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(2 67 247 / 36%);
+    border: 0px;
 
+}
+
+#div_imc{
+    margin: auto;
+    
+    text-align: justify;
+    max-width: 450px;
+    min-width: 175px;
+    
+}
 
 #taboada_painel{
-    width: 600px;
+    padding: 10px;
+    width: 628px;
     height: 100px;
     background-color: blue;
     color: white;
     text-align: center;
+    margin: auto;
+    margin-top: 100px;
 
 }
-#mostrar_taboada{
-    width: 600px;
-    height: 1000px;
+
+#taboadas{
+    margin: auto;
+    width: 648px;   
+    margin: auto;
+    display: flex;
+}
+#mostrar_taboadaAdicao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);    
+    
+}
+#mostrar_taboadaSubtracao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
     background-color: rgb(183, 183, 236);
     color: rgb(0, 0, 0);
-   
+    
+}
+#mostrar_taboadaMultiplicacao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);
+    
+}
+#mostrar_taboadaDivisao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);
     
 }

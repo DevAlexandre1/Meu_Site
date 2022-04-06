@@ -18,7 +18,7 @@
     
 
     </header>
-    <main>
+    <main id="main_treinamento">
         <h1>Treinamento diversos</h1>
 
         <div id="imc">
@@ -99,31 +99,64 @@
             <button onclick="mostrartaboada()">Mostrar taboada</button>
             <button onclick="limpartaboada()">Limpar taboada</button>
         </div>
-        <div id="mostrar_taboada">  
 
+        <div id="taboadas">
+            <div id="mostrar_taboadaAdicao">
+                <p> Adição</p>
+             </div> 
+            <div id="mostrar_taboadaSubtracao">
+                <p> Subtração</p>
+            </div> 
+            <div id="mostrar_taboadaMultiplicacao">
+                <p> Multiplicação</p>
+            </div> 
+            <div id="mostrar_taboadaDivisao">
+                <p> Divisão</p>
+            </div> 
          </div>
 
         <script> 
             function mostrartaboada(){
                 let numero = parseFloat(prompt("Digite um numero"))
-                let msg = ""
-                const saidataboada = document.getElementById("mostrar_taboada")
+                let msgA = ""
+                let msgS = ""
+                let msgM = ""
+                let msgD = ""
+                const saidataboadaA = document.getElementById("mostrar_taboadaAdicao")
+                const saidataboadaS = document.getElementById("mostrar_taboadaSubtracao")
+                const saidataboadaM = document.getElementById("mostrar_taboadaMultiplicacao")
+                const saidataboadaD = document.getElementById("mostrar_taboadaDivisao")
                             
-                if(msg === ""){
+                if(msgA === ""){
                     for(let i =0;i <= 10; i++){                      
-                        msg += `${numero} x ${i} = ${(i * numero)}`+ "<br>"
+                        msgA += `${numero} + ${i} = ${(i + numero)}`+ "<br>"
+                        msgS += `${numero} - ${i} = ${(i - numero)}`+ "<br>"
+                        msgM += `${numero} X ${i} = ${(i * numero)}`+ "<br>"
+                        msgD += `${numero} / ${i} = ${(i / numero)}`+ "<br>"
                     }
                 }else{
-                    msg=""
+                    msgA=""
                     for(let i =0;i <= 10; i++){
-                      msg += `${numero} x ${i} = ${(i * numero)}`+ "<br>"
+                        msgA += `${numero} + ${i} = ${(i + numero)}`+ "<br>"
+                        msgS += `${numero} - ${i} = ${(i - numero)}`+ "<br>"
+                        msgM += `${numero} x ${i} = ${(i * numero)}`+ "<br>"
+                        msgD += `${numero} / ${i} = ${(i / numero)}`+ "<br>"
                   }
                 }
-                    saidataboada.innerHTML = msg
+                    saidataboadaA.innerHTML = msgA
+                    saidataboadaS.innerHTML = msgS
+                    saidataboadaM.innerHTML = msgM
+                    saidataboadaD.innerHTML = msgD
             }
             function limpartaboada(){
-                const saidataboada = document.getElementById("mostrar_taboada")
-                saidataboada.innerHTML = ""
+                const saidataboadaA = document.getElementById("mostrar_taboadaAdicao")
+                const saidataboadaS = document.getElementById("mostrar_taboadaSubtracao")
+                const saidataboadaM = document.getElementById("mostrar_taboadaMultiplicacao")
+                const saidataboadaD = document.getElementById("mostrar_taboadaDivisao")
+                saidataboadaA.innerHTML = ""
+                saidataboadaS.innerHTML = ""
+                saidataboadaM.innerHTML = ""
+                saidataboadaD.innerHTML = ""
             }
 
         </script>        
