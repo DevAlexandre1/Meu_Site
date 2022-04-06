@@ -11,7 +11,7 @@ let resultadoIMC
 
 
 function calcular(){
-    resultadoIMC = (parseInt.inpPeso / (parseInt.inpAltura**2))
+    resultadoIMC = inpPeso / inpAltura**2
     let res = resultadoIMC
     if(typeof res !== "number"){
          throw Error("Apenas numeros")
