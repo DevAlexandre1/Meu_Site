@@ -7,16 +7,17 @@ let inpAltura = document.getElementById("txtaltura")
 let inpPeso = document.getElementById("txtpeso")
 const divResultado = document.getElementById("resultado")
 
-let resultadoIMC
+let peso = parseFloat(inpPeso)
+let altura = parseFloat(inpAltura)
 
-
+let resultadoIMC = peso / (altura**2)
 function calcular(){
-    resultadoIMC = inpPeso / inpAltura**2
-    let res = resultadoIMC
-    if(typeof res !== "number"){
-         throw Error("Apenas numeros")
-    }
-    if(res < 10000){         
+    
+    
+    //if(typeof res !== "number"){
+    //     throw Error("Apenas numeros")
+    
+    if(resultadoIMC < 10000){         
       divResultado.innerHTML = "Passou pelo if"
 
     }else{
