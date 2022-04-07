@@ -67,7 +67,7 @@ function calc(){
 
 */
 
-
+//IMC FUNCIONANDO DENTRO DO CONSOLE
 
 function calcIMC(peso,altura){
     let resultImc = peso / (altura**2 )
