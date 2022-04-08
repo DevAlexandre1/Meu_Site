@@ -7,23 +7,14 @@ let inpAltura = document.getElementById("txtaltura")
 let inpPeso = document.getElementById("txtpeso")
 const divResultado = document.getElementById("resultado")
 
-let peso = parseFloat(inpPeso)
-let altura = parseFloat(inpAltura)
 
-let resultadoIMC = peso / (altura**2)
-function calcular(){
-    
-    
-    //if(typeof res !== "number"){
-    //     throw Error("Apenas numeros")
-    
-    if(resultadoIMC < 10000){         
-      divResultado.innerHTML = "Passou pelo if"
 
-    }else{
-      divResultado.innerHTML = "Não passou pelo if"
-    }
-/*
+function calcular(){    
+    let peso = inpPeso.value
+    let altura = inpAltura.value
+    let resultadoIMC = peso / (altura * altura)
+    
+
     if(resultadoIMC < 18.5){
         divResultado.innerHTML = (`Seu IMC é ${resultadoIMC} e seu grau de obesidade é 0`);
         return
@@ -46,7 +37,7 @@ function calcular(){
     }else{
         divResultado.innerHTML = (`Não passou pelos IFs${resultadoIMC} `)
         return
-    }*/
+    }
 }
 
 
