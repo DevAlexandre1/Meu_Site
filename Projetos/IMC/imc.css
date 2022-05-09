@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+:root{
+    --cormenu: rgb(115, 117, 126);
+    --corh1: rgb(3, 3, 110);
+
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;;
+    text-align: center;
+    color: blue;    
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.274);
+   
+}
+
+h2{
+    padding-left: -10px;
+}
+
+h3{
+    padding-left: -10px;
+}
+
+.text_alin_center{
+    text-align: center;
+    color: white;
+    font: bold;
+}
+
+div#g0:hover{
+    color: white;
+    background-color: rgb(3, 3, 110);
+    height: 20px;
+    border-radius: 5px;
+    
+}
+
+body{
+    /*background-color: hsl(7, 18%, 10%);*/
+   /*background-image: linear-gradient(90deg, hsl(7, 18%, 10%),hsl(7, 14%, 13%), rgb(23, 21, 51),hsl(236, 68%, 12%));*/
+   background-image: url(imagens/galeria/Backgroud/Pagina\ inicial.jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   
+   
+}
+
+main{
+    margin: auto;
+    background-color: aliceblue;
+    min-width: 340px;
+    max-width: 1200px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+    border:0px;
+    
+   
+}
+div#menu_start{    
+    margin: auto;
+    min-width: 340px;
+    max-width: 1220px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--cormenu);
+    box-shadow: 5px 5px 5px rgba(2, 67, 247, 0.356);
+
+   
+}
+
+
+nav#menu_nav > div{
+    display: inline-block;
+    color:rgb(3, 3, 110);
+    width: 80px;
+    height: 5px;
+    padding: 10px;  
+    font-weight: bold;   
+    font-size: large;
+    text-align: center;
+    
+    
+}
+
+#imc{
+    padding-left: 50px;
+    text-align: justify;
+    max-width: 450px;
+    min-width: 175px;
+
+
+}
+
+
+
+#dados_pessoal{
+    text-align: center;
+    /*display: inline-block;*/
+    width: 350px;
+    background-color: blue;
+    padding-top: 0px;
+    color: white;
+    border-radius: 25px;
+
+}
+#dados_pessoal > div{
+    padding: 10px;
+    display: inline-block;
+
+}
+
+#txtpeso{
+    width: 80px;
+}
+#txtaltura{
+    width: 80px;
+}
+
+#tab_imc{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+
+td{
+    border: 1px solid black;
+    padding: 3px;
+    width: 150px;
+}
+
+.text_ali{
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+}
+
+#resultado{    
+    background-color: blue;
+    width: 361px;
+    height: 64px;
+    border-radius: 17px;
+    margin-top: 18px;
+    color: white;
+}
+
+footer p{
+    margin: 2px;
+    padding: 2px;
+    text-shadow: 2px 2px 1px black;
+}
+
+#main_treinamento{
+    width: 100%;
+    margin: auto;
+    background-color: aliceblue;
+    min-width: 642px;
+    max-width: 1200px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(2 67 247 / 36%);
+    border: 0px;
+
+}
+
+#div_imc{
+    margin: auto;
+    
+    text-align: justify;
+    max-width: 450px;
+    min-width: 175px;
+    
+}
+
+#taboada_painel{
+    padding: 10px;
+    width: 628px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+#taboadas{
+    margin: auto;
+    width: 648px;   
+    margin: auto;
+    display: flex;
+}
+#mostrar_taboadaAdicao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);    
+    
+}
+#mostrar_taboadaSubtracao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);
+    
+}
+#mostrar_taboadaMultiplicacao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);
+    
+}
+#mostrar_taboadaDivisao{
+    padding: 15px;
+    border: 1px solid black;
+    text-align: start;
+    width: 130px;
+    height: 200px;
+    background-color: rgb(183, 183, 236);
+    color: rgb(0, 0, 0);
+    
+}
